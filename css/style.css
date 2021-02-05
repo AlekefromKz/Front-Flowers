@@ -20,11 +20,18 @@
   font-style: normal;
 }
 
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #292929;
   color: #fff;
   font-family: "Gotham Pro", sans-serif;
+  margin: 0;
 }
+
+/* HEADER */
 
 .header{
   padding-top: 50px;
@@ -66,4 +73,144 @@ body {
   display: block;
   text-align: right;
   margin-top: 16px;
+}
+
+/* HERO */
+.hero{
+  padding-top: 100px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid#4c4c4c;;
+  text-align: center;
+}
+
+.flowers-slider{
+  width: 100%;
+  text-align: center;
+  margin-top: 87px;
+  margin-bottom: 67px;
+}
+
+:root {
+    --swiper-navigation-size: 18px;
+}
+
+.hero-title{
+  font-size: 34px;
+  font-family: "Gotham Pro Medium";
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  letter-spacing: 0.34px;
+}
+
+.hero-description{
+  font-family: "Gotham Pro Light";
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+}
+
+.hero-order{
+  display: block;
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.19px;
+}
+
+.hero-button{
+  margin-top: 36px;
+  padding: 30px 65px;
+  background-color: #ff2e55;
+  border: 3px solid #ff2e55;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Gotham Pro Light";
+  text-transform: uppercase;
+  letter-spacing: 0.18px;
+  hover
+}
+
+/* REVIEWS */
+
+.reviews{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.reviews-title{
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-bottom: 98px;
+  text-transform: uppercase;
+}
+
+.review-image{
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: "Gotham Pro Light";
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+}
+
+.review-image::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.review-slide{
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.review-image > * {
+  position: relative;
+}
+
+.review-image-1{
+  background: url('../img/reviews/review-1.jpg')
+}
+
+.review-name{
+  margin-bottom: 7px;
+}
+
+.review{
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.review-link{
+  color: #f24841;
+}
+
+.advantages{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid#4c4c4c;
+}
+
+.advantages-wrapper{
+  min-height: 85px;
+  margin-bottom: 30px;
+}
+
+.advantages-title{
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  max-width: 270px;
+  margin: auto;
 }
